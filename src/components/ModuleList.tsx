@@ -60,35 +60,54 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
         <div className="module-list">
             <div className="add-module-form">
                 <div className="input-group">
-                    <label>Module Name</label>
+                    <label htmlFor="module-name">Module Name</label>
                     <input
+                        id="module-name"
                         type="text"
                         placeholder="e.g. TM354 Software Engineering"
                         value={newName}
                         onChange={(e) => setNewName(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && handleAdd()}
+                        aria-required="true"
+                        aria-label="Module name"
                     />
                 </div>
 
                 <div className="form-row">
                     <div className="input-group">
-                        <label>Level</label>
-                        <select value={newLevel} onChange={(e) => setNewLevel(Number(e.target.value) as 2 | 3)}>
+                        <label htmlFor="module-level">Level</label>
+                        <select
+                            id="module-level"
+                            value={newLevel}
+                            onChange={(e) => setNewLevel(Number(e.target.value) as 2 | 3)}
+                            aria-label="Module level"
+                        >
                             <option value={2}>Level 2</option>
                             <option value={3}>Level 3</option>
                         </select>
                     </div>
 
                     <div className="input-group">
-                        <label>Credits</label>
-                        <select value={newCredits} onChange={(e) => setNewCredits(Number(e.target.value))}>
+                        <label htmlFor="module-credits">Credits</label>
+                        <select
+                            id="module-credits"
+                            value={newCredits}
+                            onChange={(e) => setNewCredits(Number(e.target.value))}
+                            aria-label="Module credits"
+                        >
                             <option value={30}>30 Credits</option>
                             <option value={60}>60 Credits</option>
                         </select>
                     </div>
 
                     <div className="input-group">
-                        <label>Grade</label>
-                        <select value={newGrade} onChange={(e) => setNewGrade(Number(e.target.value) as Grade)}>
+                        <label htmlFor="module-grade">Grade</label>
+                        <select
+                            id="module-grade"
+                            value={newGrade}
+                            onChange={(e) => setNewGrade(Number(e.target.value) as Grade)}
+                            aria-label="Module grade"
+                        >
                             <option value={1}>1 (Distinction)</option>
                             <option value={2}>2 (Pass 2)</option>
                             <option value={3}>3 (Pass 3)</option>
@@ -97,14 +116,19 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                     </div>
                 </div>
 
-                <button className="btn-primary" onClick={handleAdd}>
-                    <Plus size={18} /> Add Module
+                <button
+                    className="btn-primary"
+                    onClick={handleAdd}
+                    aria-label="Add module to list"
+                    disabled={!newName.trim()}
+                >
+                    <Plus size={18} aria-hidden="true" /> Add Module
                 </button>
             </div>
 
             <div className="modules-display">
-                <h3>Current Modules ({modules.length})</h3>
-                <div className="modules-grid">
+                <h3 id="modules-list-heading">Current Modules ({modules.length})</h3>
+                <div className="modules-grid" role="list" aria-labelledby="modules-list-heading">
                     <AnimatePresence>
                         {modules.map((m) => (
                             <motion.div
@@ -114,10 +138,12 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 className={`module-card level-${m.level} ${editingId === m.id ? 'editing' : ''}`}
+                                role="listitem"
+                                aria-label={`Module: ${m.name}, Level ${m.level}, ${m.credits} credits, Grade ${m.grade}`}
                             >
                                 {editingId === m.id ? (
                                     // Edit mode
-                                    <div className="module-edit-form">
+                                    <div className="module-edit-form" role="form" aria-label="Edit module form">
                                         <div className="edit-row">
                                             <input
                                                 type="text"
@@ -125,6 +151,8 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                                 onChange={(e) => setEditName(e.target.value)}
                                                 className="edit-input-name"
                                                 placeholder="Module name"
+                                                aria-label="Edit module name"
+                                                onKeyPress={(e) => e.key === 'Enter' && saveEdit()}
                                             />
                                         </div>
                                         <div className="edit-row">
@@ -132,6 +160,7 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                                 value={editLevel}
                                                 onChange={(e) => setEditLevel(Number(e.target.value) as 2 | 3)}
                                                 className="edit-select"
+                                                aria-label="Edit module level"
                                             >
                                                 <option value={2}>L2</option>
                                                 <option value={3}>L3</option>
@@ -140,6 +169,7 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                                 value={editCredits}
                                                 onChange={(e) => setEditCredits(Number(e.target.value))}
                                                 className="edit-select"
+                                                aria-label="Edit module credits"
                                             >
                                                 <option value={30}>30</option>
                                                 <option value={60}>60</option>
@@ -148,6 +178,7 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                                 value={editGrade}
                                                 onChange={(e) => setEditGrade(Number(e.target.value) as Grade)}
                                                 className="edit-select"
+                                                aria-label="Edit module grade"
                                             >
                                                 <option value={1}>Grade 1</option>
                                                 <option value={2}>Grade 2</option>
@@ -156,11 +187,11 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                             </select>
                                         </div>
                                         <div className="edit-actions">
-                                            <button className="btn-icon btn-save" onClick={saveEdit}>
-                                                <Check size={16} />
+                                            <button className="btn-icon btn-save" onClick={saveEdit} aria-label="Save changes">
+                                                <Check size={16} aria-hidden="true" />
                                             </button>
-                                            <button className="btn-icon btn-cancel" onClick={cancelEdit}>
-                                                <X size={16} />
+                                            <button className="btn-icon btn-cancel" onClick={cancelEdit} aria-label="Cancel editing">
+                                                <X size={16} aria-hidden="true" />
                                             </button>
                                         </div>
                                     </div>
@@ -168,7 +199,7 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                     // View mode
                                     <>
                                         <div className="module-info">
-                                            <div className="module-icon">
+                                            <div className="module-icon" aria-hidden="true">
                                                 <BookOpen size={16} />
                                             </div>
                                             <div className="module-details">
@@ -177,11 +208,19 @@ const ModuleList: React.FC<ModuleListProps> = ({ modules, onAddModule, onRemoveM
                                             </div>
                                         </div>
                                         <div className="module-actions">
-                                            <button className="btn-icon" onClick={() => startEditing(m)} title="Edit module">
-                                                <Edit2 size={16} />
+                                            <button
+                                                className="btn-icon"
+                                                onClick={() => startEditing(m)}
+                                                aria-label={`Edit ${m.name}`}
+                                            >
+                                                <Edit2 size={16} aria-hidden="true" />
                                             </button>
-                                            <button className="btn-icon" onClick={() => onRemoveModule(m.id)} title="Delete module">
-                                                <Trash2 size={16} />
+                                            <button
+                                                className="btn-icon"
+                                                onClick={() => onRemoveModule(m.id)}
+                                                aria-label={`Delete ${m.name}`}
+                                            >
+                                                <Trash2 size={16} aria-hidden="true" />
                                             </button>
                                         </div>
                                     </>
