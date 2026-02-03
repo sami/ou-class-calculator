@@ -3,25 +3,28 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0c0c14;
+  color-scheme: light;
+  color: #24285c;
+  background-color: #e9eaef;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Design Tokens */
-  --primary: #8b5cf6;
-  --primary-glow: rgba(139, 92, 246, 0.5);
-  --secondary: #ec4899;
-  --accent: #06b6d4;
-  --bg-gradient: radial-gradient(circle at top right, #1e1b4b 0%, #0c0c14 100%);
-  --card-bg: rgba(255, 255, 255, 0.03);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  /* OU-Inspired Design Tokens */
+  --primary: #00b3db;
+  /* Vibrant sky blue */
+  --primary-glow: rgba(0, 179, 219, 0.2);
+  --secondary: #3a3381;
+  /* Deep slate blue */
+  --accent: #5ac2b3;
+  /* Soft teal */
+  --bg-gradient: linear-gradient(135deg, #e6f9fd 0%, #e9eef6 100%);
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: #d3d4de;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: #ccf2fb;
 }
 
 * {
