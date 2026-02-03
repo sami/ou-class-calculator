@@ -1,0 +1,294 @@
+0 verbose cli /Users/sami/.nvm/versions/node/v22.21.1/bin/node /Users/sami/.nvm/versions/node/v22.21.1/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.21.1
+3 silly config load:file:/Users/sami/.nvm/versions/node/v22.21.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/sami/Projects/ou-calculator/.npmrc
+5 silly config load:file:/Users/sami/.npmrc
+6 silly config load:file:/Users/sami/.nvm/versions/node/v22.21.1/etc/npmrc
+7 verbose title npm install react-helmet-async
+8 verbose argv "install" "--cache" ".npm-local-cache" "react-helmet-async"
+9 verbose logfile logs-max:10 dir:/Users/sami/Projects/ou-calculator/.npm-local-cache/_logs/2026-02-03T12_27_08_158Z-
+10 verbose logfile /Users/sami/Projects/ou-calculator/.npm-local-cache/_logs/2026-02-03T12_27_08_158Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest react-helmet-async@*
+15 silly packumentCache full:https://registry.npmjs.org/react-helmet-async cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/react-helmet-async 241ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/react-helmet-async set size:undefined disposed:false
+19 silly fetch manifest react@^18.2.0
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/react 65ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:6442854 disposed:false
+23 silly placeDep ROOT react-helmet-async@2.0.5 OK for: ou-calculator@0.0.0 want: *
+24 silly fetch manifest invariant@^2.2.4
+25 silly packumentCache full:https://registry.npmjs.org/invariant cache-miss
+26 silly fetch manifest react-fast-compare@^3.2.2
+27 silly packumentCache full:https://registry.npmjs.org/react-fast-compare cache-miss
+28 silly fetch manifest shallowequal@^1.1.0
+29 silly packumentCache full:https://registry.npmjs.org/shallowequal cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/invariant 39ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/invariant set size:undefined disposed:false
+32 http fetch GET 200 https://registry.npmjs.org/react-fast-compare 72ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/react-fast-compare set size:undefined disposed:false
+34 http fetch GET 200 https://registry.npmjs.org/shallowequal 80ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/shallowequal set size:undefined disposed:false
+36 silly placeDep ROOT invariant@2.2.4 OK for: react-helmet-async@2.0.5 want: ^2.2.4
+37 silly placeDep ROOT react-fast-compare@3.2.2 OK for: react-helmet-async@2.0.5 want: ^3.2.2
+38 silly placeDep ROOT shallowequal@1.1.0 OK for: react-helmet-async@2.0.5 want: ^1.1.0
+39 silly reify moves {}
+40 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-x64-msvc
+41 silly reify mark deleted [
+41 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-x64-msvc'
+41 silly reify ]
+42 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-x64-gnu
+43 silly reify mark deleted [
+43 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-x64-gnu'
+43 silly reify ]
+44 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-ia32-msvc
+45 silly reify mark deleted [
+45 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-ia32-msvc'
+45 silly reify ]
+46 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-arm64-msvc
+47 silly reify mark deleted [
+47 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-win32-arm64-msvc'
+47 silly reify ]
+48 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-openharmony-arm64
+49 silly reify mark deleted [
+49 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-openharmony-arm64'
+49 silly reify ]
+50 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-openbsd-x64
+51 silly reify mark deleted [
+51 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-openbsd-x64'
+51 silly reify ]
+52 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-x64-musl
+53 silly reify mark deleted [
+53 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-x64-musl'
+53 silly reify ]
+54 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-x64-gnu
+55 silly reify mark deleted [
+55 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-x64-gnu'
+55 silly reify ]
+56 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-s390x-gnu
+57 silly reify mark deleted [
+57 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-s390x-gnu'
+57 silly reify ]
+58 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-riscv64-musl
+59 silly reify mark deleted [
+59 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-riscv64-musl'
+59 silly reify ]
+60 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-riscv64-gnu
+61 silly reify mark deleted [
+61 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-riscv64-gnu'
+61 silly reify ]
+62 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-ppc64-musl
+63 silly reify mark deleted [
+63 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-ppc64-musl'
+63 silly reify ]
+64 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-ppc64-gnu
+65 silly reify mark deleted [
+65 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-ppc64-gnu'
+65 silly reify ]
+66 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-loong64-musl
+67 silly reify mark deleted [
+67 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-loong64-musl'
+67 silly reify ]
+68 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-loong64-gnu
+69 silly reify mark deleted [
+69 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-loong64-gnu'
+69 silly reify ]
+70 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm64-musl
+71 silly reify mark deleted [
+71 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm64-musl'
+71 silly reify ]
+72 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm64-gnu
+73 silly reify mark deleted [
+73 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm64-gnu'
+73 silly reify ]
+74 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm-musleabihf
+75 silly reify mark deleted [
+75 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm-musleabihf'
+75 silly reify ]
+76 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm-gnueabihf
+77 silly reify mark deleted [
+77 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+77 silly reify ]
+78 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-freebsd-x64
+79 silly reify mark deleted [
+79 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-freebsd-x64'
+79 silly reify ]
+80 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-freebsd-arm64
+81 silly reify mark deleted [
+81 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-freebsd-arm64'
+81 silly reify ]
+82 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-darwin-arm64
+83 silly reify mark deleted [
+83 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-darwin-arm64'
+83 silly reify ]
+84 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-android-arm64
+85 silly reify mark deleted [
+85 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-android-arm64'
+85 silly reify ]
+86 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-android-arm-eabi
+87 silly reify mark deleted [
+87 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@rollup/rollup-android-arm-eabi'
+87 silly reify ]
+88 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-x64
+89 silly reify mark deleted [
+89 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-x64'
+89 silly reify ]
+90 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-ia32
+91 silly reify mark deleted [
+91 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-ia32'
+91 silly reify ]
+92 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-arm64
+93 silly reify mark deleted [
+93 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/win32-arm64'
+93 silly reify ]
+94 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/sunos-x64
+95 silly reify mark deleted [
+95 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/sunos-x64'
+95 silly reify ]
+96 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/openbsd-x64
+97 silly reify mark deleted [
+97 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/openbsd-x64'
+97 silly reify ]
+98 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/netbsd-x64
+99 silly reify mark deleted [
+99 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/netbsd-x64'
+99 silly reify ]
+100 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-x64
+101 silly reify mark deleted [
+101 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-x64'
+101 silly reify ]
+102 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-s390x
+103 silly reify mark deleted [
+103 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-s390x'
+103 silly reify ]
+104 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-riscv64
+105 silly reify mark deleted [
+105 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-riscv64'
+105 silly reify ]
+106 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-ppc64
+107 silly reify mark deleted [
+107 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-ppc64'
+107 silly reify ]
+108 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-mips64el
+109 silly reify mark deleted [
+109 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-mips64el'
+109 silly reify ]
+110 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-loong64
+111 silly reify mark deleted [
+111 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-loong64'
+111 silly reify ]
+112 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-ia32
+113 silly reify mark deleted [
+113 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-ia32'
+113 silly reify ]
+114 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-arm64
+115 silly reify mark deleted [
+115 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-arm64'
+115 silly reify ]
+116 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-arm
+117 silly reify mark deleted [
+117 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/linux-arm'
+117 silly reify ]
+118 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/freebsd-x64
+119 silly reify mark deleted [
+119 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/freebsd-x64'
+119 silly reify ]
+120 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/freebsd-arm64
+121 silly reify mark deleted [
+121 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/freebsd-arm64'
+121 silly reify ]
+122 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/darwin-arm64
+123 silly reify mark deleted [
+123 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/darwin-arm64'
+123 silly reify ]
+124 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-x64
+125 silly reify mark deleted [
+125 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-x64'
+125 silly reify ]
+126 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-arm64
+127 silly reify mark deleted [
+127 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-arm64'
+127 silly reify ]
+128 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-arm
+129 silly reify mark deleted [
+129 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/android-arm'
+129 silly reify ]
+130 verbose reify failed optional dependency /Users/sami/Projects/ou-calculator/node_modules/@esbuild/aix-ppc64
+131 silly reify mark deleted [
+131 silly reify   '/Users/sami/Projects/ou-calculator/node_modules/@esbuild/aix-ppc64'
+131 silly reify ]
+132 http cache shallowequal@https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz 0ms (cache hit)
+133 http cache react-helmet-async@https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-2.0.5.tgz 0ms (cache hit)
+134 http cache react-fast-compare@https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz 1ms (cache hit)
+135 http cache invariant@https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz 0ms (cache hit)
+136 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+137 silly tarball no local data for shallowequal@https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz. Extracting by manifest.
+138 silly tarball no local data for react-helmet-async@https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-2.0.5.tgz. Extracting by manifest.
+139 silly tarball no local data for react-fast-compare@https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz. Extracting by manifest.
+140 silly tarball no local data for invariant@https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz. Extracting by manifest.
+141 http fetch GET 200 https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz 59ms (cache miss)
+142 http fetch GET 200 https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz 63ms (cache miss)
+143 http fetch GET 200 https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-2.0.5.tgz 65ms (cache miss)
+144 http fetch GET 200 https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz 140ms (cache miss)
+145 silly ADD node_modules/shallowequal
+146 silly ADD node_modules/react-fast-compare
+147 silly ADD node_modules/invariant
+148 silly ADD node_modules/react-helmet-async
+149 silly ADD node_modules/fsevents
+150 silly ADD
+151 silly ADD
+152 silly ADD
+153 silly ADD
+154 silly ADD
+155 silly ADD
+156 silly ADD
+157 silly ADD
+158 silly ADD
+159 silly ADD
+160 silly ADD
+161 silly ADD
+162 silly ADD
+163 silly ADD
+164 silly ADD
+165 silly ADD
+166 silly ADD
+167 silly ADD
+168 silly ADD
+169 silly ADD
+170 silly ADD
+171 silly ADD
+172 silly ADD
+173 silly ADD
+174 silly ADD
+175 silly ADD
+176 silly ADD
+177 silly ADD
+178 silly ADD
+179 silly ADD
+180 silly ADD
+181 silly ADD
+182 silly ADD
+183 silly ADD
+184 silly ADD
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 silly ADD
+190 silly ADD
+191 silly ADD
+192 silly ADD
+193 silly ADD
+194 silly ADD
+195 silly ADD
+196 verbose cwd /Users/sami/Projects/ou-calculator
+197 verbose os Darwin 24.6.0
+198 verbose node v22.21.1
+199 verbose npm  v10.9.4
+200 verbose exit 0
+201 info ok
